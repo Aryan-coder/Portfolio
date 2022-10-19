@@ -1,0 +1,25 @@
+
+.Skills{
+    background-image: linear-gradient(rgb(129, 129, 240),rgb(95, 95, 235)   );
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+
+    .skill{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: wheat;
+        font-size: 30px;
+        span{
+            margin-left: 10px;
+            color: white;
+            font-size: 20px;
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+$backgorund-color: rgb(129, 129, 240);
+
+.Home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(skyblue,$backgorund-color);
+}
+
+.profile{
+    position: absolute;
+    top:37%;
+    left: 50%;
+    transform: translate(-60%, 0);
+
+    animation: slide-profile 1s 3s forwards;
+
+    @keyframes slide-profile {
+        100%{left: 25%};
+    }
+
+}

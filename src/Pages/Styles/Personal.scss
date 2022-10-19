@@ -1,0 +1,17 @@
+.Personal{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+
+    img{
+        width: 50%;
+    }
+
+    .personal-details{
+        width: 50%;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 5% 10%;
+    }
+
+}
