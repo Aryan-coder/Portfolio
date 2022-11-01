@@ -1,0 +1,68 @@
+.Menu{
+    position: fixed;
+    width: 3%;
+    height: 3%;
+    background-color: blue;
+    border-radius: 100px;
+    top: -5%;
+    left: 48.5%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.5s, height 0.5s, left 0.5s;
+    padding: 0 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    animation: came-down 1s 7s forwards;
+}
+
+.Menu button{
+    opacity: 0;
+    color: white;
+    font-size: x-large;
+    background-color: transparent;
+    outline: none;
+    border-width: 0px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button-description{
+   font-size: small;
+   position: fixed;
+   top: 7%;
+   opacity: 0;
+   transition: opacity .5s, top .4s;
+}
+
+.Menu:hover{
+    width: 24%;
+    height: 7%;
+    left: 38%;
+}
+
+.Menu:hover button{
+    animation: fade-in .5s .2s forwards;
+}
+
+.Menu button:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Menu button:hover span{
+    opacity: 1;
+    top: 10%;
+}
+
+@keyframes fade-in{
+    100%{opacity: 1;}
+}
+
+@keyframes came-down{
+    100%{top: 2%;}
+}

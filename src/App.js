@@ -1,15 +1,14 @@
-import Home from './Pages/Home';
-import Menu from './Pages/Components/Menu';
-import Personal from './Pages/Personal';
-import Skills from './Pages/Skills';
+import Background from './Components/Background/Background';
+import Home from './Pages/Home/Home';
+import Menu from './Components/Menu/Menu';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Menu/>
+      <Background/>
       <Home/>
-      <Personal/>
-      <Skills/>
     </div>
   );
 }

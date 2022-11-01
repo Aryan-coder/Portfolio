@@ -1,0 +1,85 @@
+.background{
+    background-color: #222;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    z-index: -1;
+    position: absolute;
+}
+
+.shape-group{
+    width: 100%;
+    position: absolute;
+}
+
+.shape-line-1{
+    position: absolute;
+    width: 200%;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    animation: shape-group-1-animation 20s linear infinite;
+}
+.shape-line-2{
+    position: absolute;
+    width: 200%;
+    top: 0%;
+    left: -100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    animation: shape-group-2-animation 20s linear infinite;
+}
+
+.shape{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.06);
+    border-radius: 100px;
+}
+
+
+
+@keyframes shape-group-1-animation{
+    100%{left: 100%; top: 0%};
+}
+
+@keyframes shape-group-2-animation{
+    100%{left: 0%; top: 0%};
+}
+
+.shape-line-reverse-2{
+    position: absolute;
+    width: 200%;
+    top: 0%;
+    left: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    animation: shape-group-reverse-2-animation 20s linear infinite;
+}
+
+@keyframes shape-group-reverse-2-animation{
+    100%{left: 0%; top: 0%};
+}
+
+.shape-line-reverse-1{
+    position: absolute;
+    width: 200%;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    animation: shape-group-reverse-1-animation 20s linear infinite;
+
+
+}
+
+@keyframes shape-group-reverse-1-animation{
+    100%{left: -100%; top: 0%};
+}
