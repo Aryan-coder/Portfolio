@@ -1,0 +1,43 @@
+.Projects{
+    height: 100vh;
+    padding: 0 10%;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 15%;
+}
+
+.project{
+    width: fit-content;
+}
+
+.project img{
+    width: 350px;
+    height: 250px;
+}
+
+.project .name{
+    color: #D9DAFF;
+    font-size: 30px;
+    margin-top: -10px;
+    flex: 1;
+}
+
+.project .icons{
+    font-size: 25px;
+    font-family: monospace;
+    color: white;
+    display: flex;
+    gap: 10px;
+    height: fit-content;
+    margin: 15px 10px;
+    flex: 1;
+}
+
+.Projects .title{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}

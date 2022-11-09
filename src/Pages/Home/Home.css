@@ -1,0 +1,52 @@
+.Home{
+    width: 100%;
+    height: 100vh;
+}
+
+.Home img{
+    width: 200px;
+    height: 200px;
+}
+
+.Home .container{
+    width: 40%;
+    height: 50%;
+    margin-left: 35%;
+    margin-top: 12%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.greatings span{
+    font-size: 22px;
+    color: #CF9EAC;
+}
+
+.name{
+    font-size: 40px;
+    font-weight: 700;
+    color: #9296F0;
+}
+
+.profession{
+    color: #B9AA87;
+    font-size: 29px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+@keyframes slide-right{
+    100%{margin-left: 0;}
+}
+
+.Home .icons{
+    display: flex;
+    gap: 15px;
+    margin: 10px 2px;
+    color: #CBCCFF;
+}
+
+.Home i:hover{
+color: white;   
+}
